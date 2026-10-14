@@ -1,0 +1,14 @@
+# Docker ignore (§6.1)
+tools/
+tests/
+clips/
+out/
+*.pyc
+__pycache__/
+.git/
+.ruff_cache/
+*.egg-info/
+.venv/
+*.md
+*.pdf
+dev_track_implementation_plan.md

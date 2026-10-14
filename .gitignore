@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Linter and formatting caches
+.ruff_cache/
+.mypy_cache/
+
+# Environment settings
+.env
+.env.local
+
+# Output data from tests and client traces
+out/
+!out/.gitkeep
+
+# Model weights and checkpoints (baked into container or downloaded separately)
+weights/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

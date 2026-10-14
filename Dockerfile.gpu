@@ -1,0 +1,6 @@
+# GPU image placeholder (§6.2): CUDA runtime image after checkpoint release
+# This file will be populated in Phase 5.
+
+# FROM nvidia/cuda:12.4.1-cudnn-runtime-ubuntu22.04
+# ...
+# See §6.2 of the implementation plan for the full specification.

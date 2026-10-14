@@ -1,0 +1,43 @@
+[project]
+name = "sarvam-s2s-server"
+version = "0.1.0"
+description = "Streaming Hindi→English S2ST WebSocket Server for Inter IIT Tech Meet 15.0"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0,<0.116",
+    "uvicorn[standard]>=0.31.0,<0.32",
+    "pydantic>=2.9.0,<3",
+    "pydantic-settings>=2.5.0,<3",
+    "numpy>=1.26.0,<2",
+    "soundfile>=0.12.1,<1",
+    "scipy>=1.13.0,<2",
+    "websockets>=13.1,<14",
+    "matplotlib>=3.9.0,<4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0,<9",
+    "pytest-asyncio>=0.24.0,<1",
+    "ruff>=0.6.0,<1",
+    "httpx>=0.27.0,<1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
